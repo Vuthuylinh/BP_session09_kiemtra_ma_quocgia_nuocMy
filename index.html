@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular Expression kiem tra ma quoc gia nuoc My</title>
+</head>
+<body>
+<script>
+    function is_usZipCode(str) {
+        regexp=/^[0-9]{5}(?:-[0-9]{4})?$/;
+        if(regexp.test(str)){
+            document.write("This is US ZipCode"+"<br>");
+        }else{document.write("This is not US ZipCode"+ "<br>")}
+
+    }
+    let zipcode1="19703-2689";
+    is_usZipCode(zipcode1);
+    let zipcode2="19066";
+    is_usZipCode(zipcode2);
+    let zipcode3="1A275";
+    is_usZipCode(zipcode3);
+</script>
+</body>
+</html>
